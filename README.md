@@ -114,23 +114,23 @@ Deploy the Streamflix application on an Nginx server within the Killerkoda Ubunt
    - Clone the repository that contains the Streamflix build artifacts:
    ```bash
      git clone https://github.com/devopsinsiders/StreamFlix.git
-     
+    ``` 
 
 7. **Copy Build Artifacts to Nginx Directory:**
    - Navigate to the cloned repository directory:
      ```bash
      cd StreamFlix
-    
+    ```
    - Copy all build artifacts to the Nginx web root directory:
      ```bash
      sudo cp -r * /var/www/html/
-     
+     ```
 
 8. **Restart Nginx:**
    - Restart the Nginx service to apply the changes:
    ```bash
      sudo systemctl restart nginx
-   
+   ```
 
 9. **Expose Port 80:**
     - In the Killerkoda interface, locate the option to expose a port. This is typically found by clicking on an option labeled "Expose" or similar. 
