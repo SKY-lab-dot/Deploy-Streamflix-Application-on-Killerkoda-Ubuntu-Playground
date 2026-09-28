@@ -95,32 +95,32 @@ Deploy the Streamflix application on an Nginx server within the Killerkoda Ubunt
 3. **Update the System:**
    - Once the playground is ready, open the terminal and update the package list by running:
      ```bash
-sudo apt update
-```
+     sudo apt update
+     ```
 
 4. **Install Git:**
    - Ensure Git is installed by executing:
-   ```bash
+      ```bash
      sudo apt install git -y
-    
+    ```
 
 5. **Install Nginx:**
    - Install the Nginx web server by running:
    ```bash
      sudo apt install nginx -y
-  
+  ```
 
 6. **Clone the StreamFlix Repository:**
    - Clone the repository that contains the Streamflix build artifacts:
    ```bash
      git clone https://github.com/devopsinsiders/StreamFlix.git
-     
+     ```
 
 7. **Copy Build Artifacts to Nginx Directory:**
    - Navigate to the cloned repository directory:
      ```bash
      cd StreamFlix
-   ```
+    ```
    - Copy all build artifacts to the Nginx web root directory:
      ```bash
      sudo cp -r * /var/www/html/
