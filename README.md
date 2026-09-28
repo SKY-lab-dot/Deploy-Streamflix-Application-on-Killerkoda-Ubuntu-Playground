@@ -1,115 +1,147 @@
 If you have not completed the previous assignments, you can find them at the following links:
 
-Weekly Practice Problem - Linux #1
-Daily Practice Problem - Linux #1
-Weekly Practice Problem - Linux #2
-Daily Practice Problem - Linux #2
-Assignment 1 : Practicing Advanced Linux Commands
-Objective:
+- [Weekly Practice Problem - Linux #1](https://github.com/devopsinsiders/azure-devsecops-batch-16/blob/main/Assignments/01.WeeklyPracticeProblem-Linux%231.md)
+- [Daily Practice Problem - Linux #1](https://github.com/devopsinsiders/azure-devsecops-batch-16/blob/main/Assignments/02.DailyPracticeProblem-Linux%231.md)
+- [Weekly Practice Problem - Linux #2](https://github.com/devopsinsiders/azure-devsecops-batch-16/blob/main/Assignments/03.WeeklyPracticeProblem-Linux%232.md)
+- [Daily Practice Problem - Linux #2](https://github.com/devopsinsiders/azure-devsecops-batch-16/blob/main/Assignments/04.DailyPracticeProblem-Linux%232.md)
+
+# Assignment 1 : Practicing Advanced Linux Commands
+
+### Objective:
 To apply Linux system commands in real-world scenarios that mimic production environment tasks. This will enhance your understanding and proficiency in managing and troubleshooting a Linux system in a professional setting.
 
-Instructions:
+### Instructions:
 For each scenario, use the appropriate commands to perform the tasks and document your steps, commands used, and the resulting outputs. Provide explanations for each step to demonstrate your understanding of the process.
 
-Scenario 1: Diagnosing High CPU Usage
-Your team has reported that the production server is experiencing high CPU usage, which is affecting performance.
 
-Task: Identify the cause of high CPU usage.
 
-Use top to monitor real-time CPU usage and identify processes consuming the most CPU.
-Capture the output and identify the top 3 processes with the highest CPU usage.
-Questions:
+### Scenario 1: Diagnosing High CPU Usage
 
-What are the PIDs, users, and CPU usage percentages of these processes?
-What steps would you take to mitigate high CPU usage caused by these processes?
-Scenario 2: Disk Space Management
+Your team has reported that the production server is experiencing high CPU usage, which is affecting performance. 
+
+1. **Task: Identify the cause of high CPU usage.**
+   - Use `top` to monitor real-time CPU usage and identify processes consuming the most CPU.
+   - Capture the output and identify the top 3 processes with the highest CPU usage.
+
+2. **Questions:**
+   - What are the PIDs, users, and CPU usage percentages of these processes?
+   - What steps would you take to mitigate high CPU usage caused by these processes?
+
+
+### Scenario 2: Disk Space Management
+
 The server is running out of disk space on the root filesystem, which is causing application errors.
 
-Task: Identify and clean up unnecessary files to free up space.
+1. **Task: Identify and clean up unnecessary files to free up space.**
+   - Use `df -h` to check disk usage and identify the full filesystem.
+   - Use `du -h /` to find large directories and files consuming space.
+   - Delete or archive unnecessary log files in `/var/log`.
 
-Use df -h to check disk usage and identify the full filesystem.
-Use du -h / to find large directories and files consuming space.
-Delete or archive unnecessary log files in /var/log.
-Questions:
+2. **Questions:**
+   - Which directories or files were consuming the most space?
+   - How much space were you able to free up, and what steps did you take?
 
-Which directories or files were consuming the most space?
-How much space were you able to free up, and what steps did you take?
-Scenario 3: System Health Check
+
+### Scenario 3: System Health Check
+
 Regular system health checks are essential to ensure the server is running optimally.
 
-Task: Perform a comprehensive health check of the server.
+1. **Task: Perform a comprehensive health check of the server.**
+   - Use `lscpu` to review CPU details.
+   - Use `free -h` to check memory usage.
+   - Use `df -h` to review disk space.
+   - Use `uptime` to check system load and uptime.
+   - Use `ps aux` to list all running processes.
+   - Use `cat /etc/os-release` to document the OS version.
 
-Use lscpu to review CPU details.
-Use free -h to check memory usage.
-Use df -h to review disk space.
-Use uptime to check system load and uptime.
-Use ps aux to list all running processes.
-Use cat /etc/os-release to document the OS version.
-Questions:
+2. **Questions:**
+   - Summarize the overall health of the server based on the outputs.
+   - Are there any immediate issues that need addressing? If so, what are they?
 
-Summarize the overall health of the server based on the outputs.
-Are there any immediate issues that need addressing? If so, what are they?
-Scenario 4: Process Management
+
+
+### Scenario 4: Process Management
+
 A rogue process is consuming excessive resources and needs to be terminated to stabilize the system.
 
-Task: Identify and terminate the rogue process.
+1. **Task: Identify and terminate the rogue process.**
+   - Use `top` or `ps aux` to find the process consuming the most resources.
+   - Use `kill -9 [PID]` to terminate the process.
 
-Use top or ps aux to find the process consuming the most resources.
-Use kill -9 [PID] to terminate the process.
-Questions:
+2. **Questions:**
+   - Which process did you identify as rogue? Provide its PID, user, and resource consumption details.
+   - What was the result of terminating the process? Did it stabilize the system?
 
-Which process did you identify as rogue? Provide its PID, user, and resource consumption details.
-What was the result of terminating the process? Did it stabilize the system?
-Submission:
+
+
+### Submission:
 Compile your findings, outputs, and screenshots into a report and submit it by the due date. Ensure all steps and explanations are clearly documented to demonstrate your troubleshooting process and understanding of the commands used.
 
-Assignment 2: Deploy Streamflix Application on Killerkoda Ubuntu Playground
-Objective: Deploy the Streamflix application on an Nginx server within the Killerkoda Ubuntu playground environment.
 
-Steps:
 
-Access the Killerkoda Ubuntu Playground:
+# Assignment 2: Deploy Streamflix Application on Killerkoda Ubuntu Playground
 
-Open your web browser and navigate to the Killerkoda Ubuntu Playground.
-Initialize the Playground:
+**Objective:**
+Deploy the Streamflix application on an Nginx server within the Killerkoda Ubuntu playground environment.
 
-Click on the "Start" button to initialize the Ubuntu environment.
-Update the System:
+**Steps:**
 
-Once the playground is ready, open the terminal and update the package list by running:
-sudo apt update
-Install Git:
+1. **Access the Killerkoda Ubuntu Playground:**
+   - Open your web browser and navigate to the [Killerkoda Ubuntu Playground](https://killercoda.com/playgrounds/scenario/ubuntu).
 
-Ensure Git is installed by executing:
-sudo apt install git -y
-Install Nginx:
+2. **Initialize the Playground:**
+   - Click on the "Start" button to initialize the Ubuntu environment.
 
-Install the Nginx web server by running:
-sudo apt install nginx -y
-Clone the StreamFlix Repository:
+3. **Update the System:**
+   - Once the playground is ready, open the terminal and update the package list by running:
+   
+     sudo apt update
+    
 
-Clone the repository that contains the Streamflix build artifacts:
-git clone https://github.com/devopsinsiders/StreamFlix.git
-Copy Build Artifacts to Nginx Directory:
+4. **Install Git:**
+   - Ensure Git is installed by executing:
+   
+     sudo apt install git -y
+    
 
-Navigate to the cloned repository directory:
-cd StreamFlix
-Copy all build artifacts to the Nginx web root directory:
-sudo cp -r * /var/www/html/
-Restart Nginx:
+5. **Install Nginx:**
+   - Install the Nginx web server by running:
+   
+     sudo apt install nginx -y
+  
 
-Restart the Nginx service to apply the changes:
-sudo systemctl restart nginx
-Expose Port 80:
+6. **Clone the StreamFlix Repository:**
+   - Clone the repository that contains the Streamflix build artifacts:
+   
+     git clone https://github.com/devopsinsiders/StreamFlix.git
+     
 
-In the Killerkoda interface, locate the option to expose a port. This is typically found by clicking on an option labeled "Expose" or similar.
-Enter port 80 to expose it.
-Access StreamFlix:
+7. **Copy Build Artifacts to Nginx Directory:**
+   - Navigate to the cloned repository directory:
+     
+     cd StreamFlix
+   
+   - Copy all build artifacts to the Nginx web root directory:
+     
+     sudo cp -r * /var/www/html/
+     
 
-After exposing port 80, you should see a URL or a button to open the application in a new tab. Click on this link to access the StreamFlix application.
-Expected Outcome: By following these steps, the Streamflix application should be successfully deployed and accessible through the URL provided by the Killerkoda interface on port 80.
+8. **Restart Nginx:**
+   - Restart the Nginx service to apply the changes:
+   
+     sudo systemctl restart nginx
+    
 
-Deliverables:
+9. **Expose Port 80:**
+    - In the Killerkoda interface, locate the option to expose a port. This is typically found by clicking on an option labeled "Expose" or similar. 
+    - Enter port `80` to expose it.
 
-A screenshot of the running Streamflix application in your web browser.
-A brief report (1-2 paragraphs) describing any challenges encountered during the deployment process and how they were resolved.
+10. **Access StreamFlix:**
+    - After exposing port 80, you should see a URL or a button to open the application in a new tab. Click on this link to access the StreamFlix application.
+
+**Expected Outcome:**
+By following these steps, the Streamflix application should be successfully deployed and accessible through the URL provided by the Killerkoda interface on port 80.
+
+**Deliverables:**
+- A screenshot of the running Streamflix application in your web browser.
+- A brief report (1-2 paragraphs) describing any challenges encountered during the deployment process and how they were resolved.
