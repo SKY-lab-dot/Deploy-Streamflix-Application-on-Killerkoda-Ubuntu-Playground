@@ -94,9 +94,9 @@ Deploy the Streamflix application on an Nginx server within the Killerkoda Ubunt
 
 3. **Update the System:**
    - Once the playground is ready, open the terminal and update the package list by running:
-   
+     ```bash
      sudo apt update
-    
+    ```
 
 4. **Install Git:**
    - Ensure Git is installed by executing:
