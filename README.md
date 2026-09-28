@@ -102,13 +102,13 @@ sudo apt update
    - Ensure Git is installed by executing:
    ```bash
      sudo apt install git -y
-    ```
+    
 
 5. **Install Nginx:**
    - Install the Nginx web server by running:
    ```bash
      sudo apt install nginx -y
-  ```
+  
 
 6. **Clone the StreamFlix Repository:**
    - Clone the repository that contains the Streamflix build artifacts:
