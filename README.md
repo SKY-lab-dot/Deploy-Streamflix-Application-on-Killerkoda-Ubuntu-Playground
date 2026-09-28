@@ -100,9 +100,9 @@ Deploy the Streamflix application on an Nginx server within the Killerkoda Ubunt
 
 4. **Install Git:**
    Ensure Git is installed by executing:
-       ```bash
-        sudo apt install git -y
-       ```
+   ```bash
+   sudo apt install git -y
+    ```
 
 5. **Install Nginx:**
     Install the Nginx web server by running:
